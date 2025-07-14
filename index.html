@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Study Timer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1>⏱️ Study Timer</h1>
+      <p class="subtitle">Boost your focus and manage time like a pro!</p>
+    </div>
+    <div class="circle" id="timeDisplay"><span id="timeText">00:00</span></div>
+
+    <div class="controls">
+      <p><strong>⏳ Set your study time:</strong></p>
+      <div class="control-box">
+        <input type="number" id="duration" min="1" placeholder="Minutes..." />
+        <button onclick="startTimer()" id="startBtn">GO</button>
+      </div>
+    </div>
+    <br />
+
+    <div class="progress-wrapper">
+      <div class="bar">
+        <div class="bar-inner" id="barInner"></div>
+      </div>
+
+      <img src="shuyguy.gif" alt="Shy Guy Walker" class="walker" id="walker" />
+      <p>Bar proses study (<span id="percent">0%</span>)</p>
+    </div>
+
+    <audio
+      id="alarmSound"
+      src="https://actions.google.com/sounds/v1/alarms/alarm_clock.ogg"
+      preload="auto"
+    ></audio>
+
+    <footer
+      style="text-align: center; margin-top: 150px; color: #000; font-size: 14px"
+    >
+      &copy; 2025 Sabar Martua Tamba — 0821-7203-6978. All rights reserved.
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
