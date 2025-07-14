@@ -8,6 +8,111 @@ body {
   color: #333;
 }
 
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 2.2rem;
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+  }
+
+  .circle {
+    width: 140px;
+    height: 140px;
+  }
+
+  .circle::before {
+    width: 110px;
+    height: 110px;
+  }
+
+  .circle span {
+    font-size: 18px;
+  }
+
+  .control-box {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    padding: 20px;
+    max-width: 90%;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .control-box input[type="number"],
+  .control-box button {
+    width: 100%;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+
+  .bar {
+    height: 24px;
+  }
+
+  .walker {
+    width: 40px;
+    top: -40px;
+  }
+
+  .progress-wrapper {
+    width: 95%;
+  }
+
+  footer {
+    font-size: 12px;
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 20px;
+  }
+
+  .header {
+    padding: 20px 15px;
+  }
+
+  .header h1 {
+    font-size: 1.8rem;
+  }
+
+  .circle {
+    width: 120px;
+    height: 120px;
+  }
+
+  .circle::before {
+    width: 90px;
+    height: 90px;
+  }
+
+  .circle span {
+    font-size: 16px;
+  }
+
+ .control-box {
+    padding: 15px;
+  }
+
+  .control-box input[type="number"],
+  .control-box button {
+    font-size: 15px;
+  }
+
+  .bar {
+    height: 20px;
+  }
+
+  .walker {
+    width: 30px;
+    top: -35px;
+  }
+}
+
 .header {
   background: linear-gradient(to right, #00c6ff, #0072ff);
   padding: 30px 20px;
@@ -34,6 +139,7 @@ body {
   margin-top: 10px;
   text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
 }
+
 
 .circle {
   width: 180px;
@@ -71,7 +177,7 @@ body {
   color: white;
 }
 
-@media (max-width: 600px) {
+
 .controls {
   margin: 40px 0;
 }
@@ -182,5 +288,4 @@ button:hover:not(:disabled) {
   height: auto;
   transition: transform 1s linear;
   pointer-events: none;
-}
 }
